@@ -48,3 +48,9 @@
   font-weight: bold;
   color: #ff5722;
 }
+
+.calendar-day.taken {
+  font-weight: bold;
+  background: lime;
+  color: #ff5722;
+}
