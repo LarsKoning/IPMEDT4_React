@@ -4,6 +4,7 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  border: 2px dashed #FF5E00;
   margin: auto;
   margin-top: 20px;
 }
@@ -49,6 +50,7 @@
 .calendar-day.today {
   font-weight: bold;
   color: #ff5722;
+
 }
 
 .calendar-day.taken {
