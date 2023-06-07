@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/modal.css'
+import money from '../images/money.jpg'
 
 
 const Modal = ({open, onClose}) => {
@@ -9,21 +10,21 @@ const Modal = ({open, onClose}) => {
         <div onClick={(e) => {
             e.stopPropagation()
         }} className="modalContainer">
-            <img src="" alt="" />
+            <img src={money} alt="" />
             <div className="modalRight">
                 <p onClick={onClose} className='closeBtn'>X</p>
 
                 <div className="content">
-                    <p>Do you want a</p>
-                    <h1>$20 CREDIT</h1>
-                    <p>for your first trade?</p>
+                    <p>Do You Want To Earn</p>
+                    <h1>MORE MONEY</h1>
+                    <p>Each Month?</p>
                 </div>
                 <div className="btnContainer">
                     <button className='btnPrimary'>
-                        <span className='bold'>YES</span>, I love NFT's
+                        <span className='bold'>YES</span>, Ofcourse I Do
                     </button>
                     <button className='btnOutline'>
-                        <span className="bold">NO</span>, thanks
+                        <span className="bold">NO</span>, Thanks
                     </button>
                 </div>
             </div>

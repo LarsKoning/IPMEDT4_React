@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <button className='modalBtn' onClick={() => setOpenModal(true)}>Modal</button>
+      <button className='modalBtn' onClick={() => setOpenModal(true)}>Tips For More Money</button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}/>
       {/* <Calendar /> */}
     </div>
