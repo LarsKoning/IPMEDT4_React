@@ -1,0 +1,22 @@
+.rating {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: min(45%, 10em);
+    align-items: center;
+    font-family: 'Montserrat';
+    margin: 10px;
+}
+
+#header{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#underText{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+
