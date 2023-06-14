@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/GoalCard.css'
+
 
 const GoalCard = ({ text, amount1, amount2 }) => {
   
