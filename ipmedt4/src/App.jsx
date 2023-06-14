@@ -12,6 +12,7 @@ import GoalCard from './components/GoalCard';
 import './styles/GoalCard.css'
 import MonthSelect from './components/MonthSelect';
 import './styles/MonthSelect.css'
+import HalfCard from './components/HalfCard';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <section className='ratings'>
       <Rating header={"Gemiddelde rating"} underText={"5 van de 5"}/>
       <Rating header={"Laatste rating"} underText={"5 van de 5"}/>
+      <HalfCard text={"volgende afspraak"} appointment={"morgen"}/>
       </section>
       <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen"/>
       <GoalCard text={"Maand Doel"} amount1="150,00" amount2= "200,00"/>
