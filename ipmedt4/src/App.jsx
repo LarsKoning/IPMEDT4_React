@@ -1,5 +1,5 @@
 import './App.css';
-// import Calendar from './components/Calender';
+import Calendar from './components/Calender';
 import Modal from './components/Modal';
 import { useState } from 'react';
 import  Card  from './components/Card';
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       {/* <button className='modalBtn' onClick={() => setOpenModal(true)}>Tips For More Money</button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}/> */}
-      {/* <Calendar /> */}
+      <Calendar />
       <Card text="Inkomsten" amount="$150,00"/>
       <section className='ratings'>
       <Rating header={"Gemiddelde rating"} underText={"5 van de 5"}/>
