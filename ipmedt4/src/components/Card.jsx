@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/Card.css';
+
 
 const Card = ({ text, image,  amount }) => {
   return (
