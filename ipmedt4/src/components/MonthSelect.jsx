@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/MonthSelect.css';
 
 const MonthSelect = ({ month }) => {
   return (

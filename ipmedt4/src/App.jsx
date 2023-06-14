@@ -4,14 +4,10 @@ import Modal from './components/Modal';
 import { useState } from 'react';
 import  Card  from './components/Card';
 import Rating from './components/Rating';
-import './styles/Card.css';
-import './styles/Rating.css';
 import Tip from './components/Tip';
-import './styles/Tip.css';
 import GoalCard from './components/GoalCard';
-import './styles/GoalCard.css'
 import MonthSelect from './components/MonthSelect';
-import './styles/MonthSelect.css'
+
 
 
 function App() {
