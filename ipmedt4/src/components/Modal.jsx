@@ -10,7 +10,7 @@ const Modal = ({open, onClose}) => {
         <div onClick={(e) => {
             e.stopPropagation()
         }} className="modalContainer">
-            <img src={money} alt="" />
+            <img className='img' src={money} alt="" />
             <div className="modalRight">
                 <p onClick={onClose} className='closeBtn'>X</p>
 

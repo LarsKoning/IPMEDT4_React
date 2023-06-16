@@ -1,0 +1,16 @@
+#selection {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    width: min(50%, 20em);
+    margin: 25px 10px;
+}
+
+#leftArrow {
+    transform: scaleX(-1);
+
+}
