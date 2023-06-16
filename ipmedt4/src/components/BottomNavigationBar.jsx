@@ -11,7 +11,7 @@ const BottomNavigationBar = () => {
         </li>
         <li>
           <img src={'./icons/car.svg'} alt="dashboard" />
-          <a>Card</a>
+          <a>Car</a>
         </li>
         <li>
           <img src={'./icons/steering-wheel.svg'} alt="dashboard" />

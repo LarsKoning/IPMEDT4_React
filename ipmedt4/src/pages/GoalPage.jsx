@@ -18,9 +18,9 @@ function App() {
   const [earnings, setEarnings] = useState({
     labels: Earnings.map((data) => data.maand),
     datasets: [{
-      label: "geld verdiend",
+      label: ["geld verdiend"],
       data: Earnings.map((data) => data.verdiend),
-      backgroundColor: ["blue", "blue", "blue", "blue", "red"]
+      backgroundColor: ["#5297FF", "#5297FF", "#5297FF", "#5297FF", "#FF5E00"]
     }]
   })
 
@@ -30,11 +30,10 @@ function App() {
       <section className="content">
         <MonthSelect month={"Juni 2023"} />
         <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
+        <div style={{ width: 'min(80%, 40em)', paddingTop: '5%' }}>
+          <Graph className='graph' chartData={earnings} />
+        </div>
       </section>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
-      <div style={{ width: 700, paddingTop: 200 }}>
-        <Graph className='graph' chartData={earnings} />
-      </div>
       <BottomNavigationBar />
     </div>
   );
