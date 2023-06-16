@@ -10,16 +10,15 @@ import BottomNavigationBar from '../components/BottomNavigationBar'
 
 function App() {
   return (
-    <div>aaa</div>
-    // <div className="App">
-    //   <TopNavigationBar />
-    //   <section className="content">
-    //     <MonthSelect month={"Juni 2023"} />
-    //     <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
-    //   </section>
-    //   {/* <Graph /> */}
-    //   <BottomNavigationBar />
-    // </div>
+    <div className="App">
+      <TopNavigationBar />
+      <section className="content">
+        <MonthSelect month={"Juni 2023"} />
+        <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
+      </section>
+      {/* <Graph /> */}
+      <BottomNavigationBar />
+    </div>
   );
 }
 
