@@ -35,6 +35,7 @@ const Calendar = () => {
     return calendarDays.map((day, index) => {
       const isCurrentMonth = day.isSame(date, 'month');
       const isToday = day.isSame(moment(), 'day');
+      const isPast = day.isBefore(moment(), 'day');
       const isTaken = ['2023-06-30', '2023-05-27', '2023-05-28'];
 
       isTaken.push('2023-05-30')      
@@ -42,7 +43,7 @@ const Calendar = () => {
       return (
         <div
           key={index}
-          className={`calendar-day ${isCurrentMonth ? 'current-month' : ''} ${isToday ? 'today' : ''}
+          className={`calendar-day ${isCurrentMonth ? 'current-month' : ''} ${isToday ? 'today' : ''} ${isPast ? 'past' : ''}
           ${isTaken.some(val => 
             (moment(val).isSame(day, 'day'))
           ) ? 'taken' : ''}

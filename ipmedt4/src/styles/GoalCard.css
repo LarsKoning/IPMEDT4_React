@@ -1,0 +1,68 @@
+:root{
+    --progress: 0%;
+}
+
+.goal-income-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px 4px rgba(131, 138, 141, 0.5);
+    padding: 16px;
+    width: min(80%, 40em);
+}
+
+.goal-income-card-body {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+#progress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#goalmoneybag {
+    padding: 8px;
+    width: 3rem;
+    justify-content: center;
+}
+
+#goal {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#goalamount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #5297FF;
+    border-radius: 100px;
+    height: 20px;
+  }
+  
+  #myBar {
+    width: var(--progress);
+    height: 30px;
+    background-color: #0066FF;
+    text-align: center;  
+    border-radius: 100px;
+    height: 20px;
+
+  }
