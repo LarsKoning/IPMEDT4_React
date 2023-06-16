@@ -13,6 +13,7 @@ import HalfCard from './components/HalfCard';
 import OverzichtCard from './components/OverzichtCard';
 
 let totaal = 0;
+let isTaken = [];
 
 function App() {
   const [reserveringen, setReserveringen] = useState([]);
@@ -29,7 +30,7 @@ function App() {
     }
   }
 
-  const updatePricing = (resvs) => {
+  function updatePricing(resvs){
     totaal = 0
     resvs.map(resv => {
       if(resv.owner === 1){
@@ -38,11 +39,21 @@ function App() {
     });
   }
 
+  function getDates(resvs){
+    isTaken = [];
+    resvs.map(resv =>{
+      if(resv.owner === 1){
+        isTaken.push(resv.reservering)
+      }     
+    })
+  }
+
   useEffect(() => {
     
     getAllReserveringen().then(response => {
       setReserveringen(response)
       updatePricing(response)
+      getDates(response)
     })
     
   }, [])
@@ -53,9 +64,9 @@ function App() {
     <div className="App">
       {/* <button className='modalBtn' onClick={() => setOpenModal(true)}>Tips For More Money</button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}/> */}
-      <Calendar />
+      <Calendar isTaken={isTaken}/>
       <MonthSelect month={"Juni 2023"}/>
-      <Card text="Inkomsten" amount="$150,00"/>
+      <Card text="Inkomsten" amount={"$" + totaal}/>
       <section className='ratings'>
       <Rating header={"Gemiddelde rating"} underText={"5 van de 5"}/>
       <Rating header={"Laatste rating"} underText={"5 van de 5"}/>
