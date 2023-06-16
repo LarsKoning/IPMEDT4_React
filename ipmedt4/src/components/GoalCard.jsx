@@ -3,7 +3,7 @@ import '../styles/GoalCard.css'
 
 
 const GoalCard = ({ text, amount1, amount2 }) => {
-  
+
   calc(parseInt(amount1), parseInt(amount2));
   myFunction_set(percentage + '%');
   return (
@@ -11,15 +11,17 @@ const GoalCard = ({ text, amount1, amount2 }) => {
     <div className="goal-income-card">
       <div className="goal-income-card-body">
         <section id='progress'>
-          <p id='goal'>{text}</p>
+          <section className='top-goal-card'>
+            <p id='goal'>{text}</p>
+            {/* <img id='pencil' src="./icons/pencil.svg" alt="Pencil" /> */}
+          </section>
           <img id='goalmoneybag' src="./icons/money.svg" alt="Money" />
           <p id='goalamount'> ${amount1} / {amount2}</p>
           <div id="myProgress">
             <div id="myBar"></div>
           </div>
-      
+
         </section>
-        <img id='pencil' src="./icons/pencil.svg" alt="Pencil" />
       </div>
     </div>
 

@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,7 +40,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300&display=swap");
 
-.ratings{
+.ratings {
   display: flex;
-  
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
