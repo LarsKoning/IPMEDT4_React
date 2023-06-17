@@ -1,6 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import '../styles/TopNavigationBar.css';
-import '../styles/BottomNavigationBar.css';
+
 
 const Layout = () => {
     return (
