@@ -31,7 +31,7 @@ function App() {
         <Header text="Inkomsten" />
         <MonthSelect month={"Juni 2023"} />
         <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
-        <div style={{ width: 'min(80%, 40em)', paddingTop: '5%' }}>
+        <div id='graph' >
           <Graph className='graph' chartData={earnings} />
         </div>
       </section>
