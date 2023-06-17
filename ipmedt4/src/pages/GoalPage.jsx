@@ -26,7 +26,6 @@ function App() {
 
   return (
     <div className="App">
-      <TopNavigationBar />
       <section className="content">
         <MonthSelect month={"Juni 2023"} />
         <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
@@ -34,7 +33,7 @@ function App() {
           <Graph className='graph' chartData={earnings} />
         </div>
       </section>
-      <BottomNavigationBar />
+
     </div>
   );
 }
