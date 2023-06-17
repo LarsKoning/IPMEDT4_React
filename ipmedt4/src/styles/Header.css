@@ -1,0 +1,37 @@
+#header {
+    display: flex;
+    /* justify-content: center; */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    width: min(50%, 20em);
+    margin: 25px 10px;
+}
+
+#leftArrowButton {
+    transform: scaleX(-1);
+    width: min(3vw, 15px);
+    height: auto;
+    /* background-color: rebeccapurple; */
+}
+
+#headerText {
+    justify-content: center;
+    margin-left: 10px;
+    /* background-color: red; */
+}
+
+.backButton {
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: min(5vw, 50px);
+    margin-right: 10px;
+}
+
+#header {
+    width: 100%;
+}

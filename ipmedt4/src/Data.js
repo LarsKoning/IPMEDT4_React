@@ -1,24 +1,24 @@
 export const Earnings = [
     {
-      maand: 1,
+      maand: 'Februari',
       verdiend: [200, 300],
     },
     {
-    maand: 2,
+    maand: 'Maart',
     verdiend: [200, 400],
 
     },
     {
-    maand: 3,
+    maand: 'April',
     verdiend: [200, 120],
 
     },
     {
-    maand: 4,
+    maand: 'Mei',
     verdiend: [200, 250],
     },
     {
-      maand: 5,
+      maand: 'Juni',
       verdiend: [200, 450],
       },
   ];
