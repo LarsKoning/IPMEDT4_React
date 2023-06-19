@@ -6,7 +6,6 @@ const Rating = ({ header, underText }) => {
         <div className='rating'>
             <section className="headerRating">
             <p >{header}</p>
-            <p>Rating</p>
             </section>
             <section className="combinedRating">
             <section className='stars'>
