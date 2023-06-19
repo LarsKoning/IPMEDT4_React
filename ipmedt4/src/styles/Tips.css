@@ -1,0 +1,13 @@
+.tiplijst{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    text-align: start;
+    width: 80%;
+}
+
+.tips{
+    margin: 15px;
+    font-size: 20px;
+}
