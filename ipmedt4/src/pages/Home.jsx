@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div className="App">
-      <TopNavigationBar/>
       <section className='content'>
         <MonthSelect month={"Juni 2023"}/>
         <Card text="Inkomsten" amount="$150,00"/>
@@ -33,7 +32,6 @@ function App() {
         </section>
         <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen"/>
       </section>
-      <BottomNavigationBar />
     </div>
   );
 }
