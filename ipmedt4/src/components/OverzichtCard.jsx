@@ -6,7 +6,7 @@ const OverzichtCard = ({ text,  overzicht }) => {
     
     <div className="overzicht-card">
       <div className="overzicht-card-body">
-        <p id='overzichttitel'>{text}</p>
+        <p id="overzichttitel" >{text}</p>
         <img id='agenda' src="./icons/calendar.svg" alt="Agenda" />
         <p id='overzicht'> {overzicht}</p>
       </div>

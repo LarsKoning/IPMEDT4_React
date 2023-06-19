@@ -7,6 +7,7 @@ const HalfCard = ({ text, appointment, date, hours }) => {
     <div className="next-appointment">
       <div className="next-appointment-body">
         <p id='nextCard'>{text}</p>
+        <img id='nextIcon' src="./icons/car.svg" alt="Agenda" />
         <section className="comingAppointment">
         <p id='Appointment'> {appointment}</p>
         <p id='Date'> {date}</p>

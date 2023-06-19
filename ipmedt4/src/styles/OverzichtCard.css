@@ -5,6 +5,10 @@
     padding: 16px;
     width: min(40%, 10em);
     aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
 }
 
 .overzicht-card-body {
@@ -20,16 +24,17 @@ p {
 }
 
 #agenda{
-    width: 60px;
+    width: min(32px, 10vw);
 }
 
 #overzichttitel {
-    font-weight: 200;
-    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 #overzicht {
-    font-family: 'Montserrat';
+    
     font-style: normal;
     font-size: 1.2rem;
 }

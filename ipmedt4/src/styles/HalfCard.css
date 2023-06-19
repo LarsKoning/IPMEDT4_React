@@ -5,6 +5,10 @@
     padding: 16px;
     width: min(40%, 10em);
     aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
 }
 
 a .next-appointment-body {
@@ -13,6 +17,7 @@ a .next-appointment-body {
     align-items: center;
     margin: 0;
     padding: 0;
+    
 }
 
 p {
@@ -26,16 +31,20 @@ p {
 }
 
 #nextCard {
-    font-family: 'Montserrat';
+    
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
 }
 
 .comingAppointment{
-    background-color: red;
+    
     display: flex;
     flex-direction: column;
     height: 100%;
     align-items: center;
+}
+
+#nextIcon{
+    width: min(32px, 10vw);
 }
