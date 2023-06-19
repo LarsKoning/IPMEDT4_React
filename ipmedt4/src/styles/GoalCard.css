@@ -74,7 +74,8 @@ p {
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;}
+    justify-content: center;
+}
 
 #graph {
     /* justify-content: center; */
@@ -84,5 +85,3 @@ p {
     width: min(80%, 60em);
     margin-bottom: 120px;
 }
-
-
