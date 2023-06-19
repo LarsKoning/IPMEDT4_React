@@ -46,7 +46,7 @@ function App() {
     labels: Earnings.map((data) => data.maand),
     datasets: [
       {
-        label: 'Geld Verdiend',
+        label: 'Geld Verdiend', label: 'Verwachte inkomsten',
         data: Earnings.map((data) => data.verdiend),
         backgroundColor: ['#5297FF', '#5297FF', '#5297FF', '#5297FF', '#FF5E00'],
 
@@ -54,7 +54,7 @@ function App() {
       {
         label: 'Verwachte inkomsten',
         data: Earnings.map((data) => data.otherData),
-        backgroundColor: ['#FF5E00', '#FF5E00', '#FF5E00', '#FF5E00', '#FF5E00'],
+        backgroundColor: ['#FF5E00', '#5297FF', '#5297FF', '#5297FF', '#5297FF'],
       },
     ],
   });
