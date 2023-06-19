@@ -8,6 +8,7 @@ import Graph from '../components/Graph';
 import Modal from '../components/Modal';
 import { Earnings } from '../Data';
 import { useState } from 'react';
+import Header from '../components/Header';
 
 
 
@@ -26,15 +27,15 @@ function App() {
 
   return (
     <div className="App">
-      <TopNavigationBar />
       <section className="content">
+        <Header text="Inkomsten" />
         <MonthSelect month={"Juni 2023"} />
         <GoalCard text={"Maand Doel"} amount1="150,00" amount2="200,00" />
-        <div style={{ width: 'min(80%, 40em)', paddingTop: '5%' }}>
+        <div id='graph' >
           <Graph className='graph' chartData={earnings} />
         </div>
       </section>
-      <BottomNavigationBar />
+
     </div>
   );
 }

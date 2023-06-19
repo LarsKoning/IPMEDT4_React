@@ -28,11 +28,11 @@
 .bottom-navbar a {
   color: #333;
   text-decoration: none;
-  font-size: 4vw;
+  font-size: min(4vw, 40px);
 }
 
 .bottom-navbar img {
-  width: 5vw;
+  width: min(7vw, 40px);
   height: auto;
 
 }
