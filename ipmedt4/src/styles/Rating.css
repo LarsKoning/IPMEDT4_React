@@ -5,7 +5,6 @@
     width: min(45%, 10em);
     align-items: center;
     font-family: 'Montserrat';
-    justify-content: space-around;
     margin: 10px;
     width: 90%;
 }
@@ -19,6 +18,8 @@
 .combinedRating{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .headerRating{
@@ -41,6 +42,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: min(75%, 430px);
+    border-radius: 10px;
+    width: min(80%, 430px);
     box-shadow: 0px 2px 10px 4px rgba(131, 138, 141, 0.5);
 }
