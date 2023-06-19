@@ -6,42 +6,44 @@
     align-items: center;
     font-family: 'Montserrat';
     margin: 10px;
-    width: 90%;
+    width: 50%;
 }
 
 
-.stars{
+.stars {
     display: flex;
     flex-direction: row;
 }
 
-.combinedRating{
+.combinedRating {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: center;
+    width: 50%;
 }
 
-.headerRating{
+.headerRating {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     justify-content: center;
     /* word-break: break-all; */
+    width: 50%;
 }
 
-#underText{
+#underText {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
 
 
-.ratings{
+.ratings {
     /* gap: 0 min(4em, 10vw) ; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
     border-radius: 10px;
     width: min(80%, 27rem);
     box-shadow: 0px 2px 10px 4px rgba(131, 138, 141, 0.5);
