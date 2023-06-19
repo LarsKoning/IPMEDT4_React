@@ -1,30 +1,41 @@
 import React from 'react';
 import '../styles/BottomNavigationBar.css';
+import { Link } from 'react-router-dom';
 
 const BottomNavigationBar = () => {
   return (
-    <div className="bottom-navbar">
-      <ul>
-        <li>
-          <img src={'./icons/dashboard.svg'} alt="dashboard" />
-          <a>Performance</a>
-        </li>
-        <li>
-          <img src={'./icons/car.svg'} alt="dashboard" />
-          <a>Car</a>
-        </li>
-        <li>
-          <img src={'./icons/steering-wheel.svg'} alt="dashboard" />
-          <a>Bookings</a>
-        </li>
-        <li>
-          <img src={'./icons/message.svg'} alt="dashboard" />
-          <a>Messages</a>
-        </li>
-        <li>
-          <img src={'./icons/profile.svg'} alt="dashboard" />
-          <a>Profile</a>
-        </li>
+    <div >
+      <ul className="bottom-navbar">
+        <Link to='/'>
+          <li>
+            <img src={'./icons/dashboard.svg'} alt="dashboard" />
+            <p>Performance</p>
+          </li>
+        </Link>
+        <Link to="/car">
+          <li>
+            <img src={'./icons/car.svg'} alt="dashboard" />
+            <p>Car</p>
+          </li>
+        </Link>
+        <Link className="`navbarLink" to='/Profile'>
+          <li>
+            <img src={'./icons/steering-wheel.svg'} alt="dashboard" />
+            <p>Bookings</p>
+          </li>
+        </Link>
+        <Link className="`navbarLink" to='/Profile'>
+          <li>
+            <img src={'./icons/message.svg'} alt="dashboard" />
+            <p>Messages</p>
+          </li>
+        </Link>
+        <Link className="`navbarLink" to='/Profile'>
+          <li >
+            <img src={'./icons/profile.svg'} alt="dashboard" />
+            <p>Profile</p>
+          </li>
+        </Link>
       </ul>
     </div>
   );

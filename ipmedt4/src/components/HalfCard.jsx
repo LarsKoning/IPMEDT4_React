@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/HalfCard.css'
+import { Link } from 'react-router-dom';
 
 const HalfCard = ({ text, appointment, date, hours }) => {
   return (
     
-    <div className="next-appointment">
+    <Link to="/agenda" className="next-appointment">
       <div className="next-appointment-body">
         <p id='nextCard'>{text}</p>
         <img id='nextIcon' src="./icons/car.svg" alt="Agenda" />
@@ -14,7 +15,7 @@ const HalfCard = ({ text, appointment, date, hours }) => {
         <p id='Hours'> {hours}</p>
         </section>
       </div>
-    </div>
+    </Link>
     
   );
 };

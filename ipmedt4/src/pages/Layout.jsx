@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import '../styles/BottomNavigationBar.css'
 
 
 const Layout = () => {
@@ -8,30 +9,40 @@ const Layout = () => {
             <div className="top-navbar">
                 <img src={'./icons/logo.svg'} alt="Logo" />
             </div>
-
+            
             {/* Bottom Navbar */}
-            <div className="bottom-navbar">
-                <ul>
-                    <li>
-                        <img src={'./icons/dashboard.svg'} alt="dashboard" />
-                        <a>Performance</a>
+            <div >
+                <ul className="bottom-navbar">
+                    <Link to='/' >
+                    <li className="selectedPage" >
+                        <img  src={'./icons/dashboard.svg'} alt="dashboard" />
+                        <p>Performance</p>
                     </li>
+                    </Link>
+                    <Link to="/car">
                     <li>
                         <img src={'./icons/car.svg'} alt="dashboard" />
-                        <a>Car</a>
+                        <p>Car</p>
                     </li>
+                    </Link>
+                    <Link className="`navbarLink" to='/Profile'>
                     <li>
                         <img src={'./icons/steering-wheel.svg'} alt="dashboard" />
-                        <a>Bookings</a>
+                        <p>Bookings</p>
                     </li>
+                        </Link>
+                    <Link className="`navbarLink" to='/Profile'>
                     <li>
                         <img src={'./icons/message.svg'} alt="dashboard" />
-                        <a>Messages</a>
+                        <p>Messages</p>
                     </li>
-                    <li>
+                    </Link>
+                    <Link className="`navbarLink" to='/Profile'>
+                    <li >
                         <img src={'./icons/profile.svg'} alt="dashboard" />
-                        <a>Profile</a>
+                        <p>Profile</p>
                     </li>
+                    </Link>
                 </ul>
             </div>
             <Outlet />

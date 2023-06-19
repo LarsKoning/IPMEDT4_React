@@ -1,0 +1,12 @@
+.profileinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#profilepic{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}

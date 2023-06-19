@@ -64,9 +64,9 @@ const Calendar = () => {
   return (
     <div className="calendar">
       <div className="calendar-header">
-        <button onClick={handlePrevMonth}>Prev</button>
+        <button onClick={handlePrevMonth}><img id='leftArrow' src="./icons/Back-Arrow.svg" alt="Arrow" /></button>
         <h2>{date.format('MMMM YYYY')}</h2>
-        <button onClick={handleNextMonth}>Next</button>
+        <button onClick={handleNextMonth}><img id='rightArrow' src="./icons/Back-Arrow.svg" alt="Arrow" /></button>
       </div>
       <div className="calendar-body">
         {renderDaysOfWeek()}

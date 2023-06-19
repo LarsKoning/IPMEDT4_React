@@ -12,6 +12,7 @@ import HalfCard from '../components/HalfCard';
 import OverzichtCard from '../components/OverzichtCard';
 import BottomNavigationBar from '../components/BottomNavigationBar';
 import '../styles/Home.css'
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -27,8 +28,8 @@ function App() {
            <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
         </section>
         <section className='ratings'>
-          <Rating header={"Gemiddelde rating"} underText={"5 van de 5"}/>
-          <Rating header={"Laatste rating"} underText={"5 van de 5"}/>
+          <Rating header={"Gemiddelde"} underText={"5 van de 5"}/>
+          <Rating header={"Laatste"} underText={"5 van de 5"}/>
         </section>
         <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen"/>
       </section>
