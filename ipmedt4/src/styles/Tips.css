@@ -6,12 +6,26 @@
     text-align: start;
     width: 80%;
     font-family: 'Montserrat';
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
+    margin-top: 10px;
 }
 
 .tips {
-    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* margin: 15px; */
     padding-bottom: 15px;
     font-size: 20px;
     border-bottom: 2px solid #ECECEC;
+}
+
+#tipImage {
+    width: 2em;
+    margin-right: 3vw;
+}
+
+.bottomCard {
+    margin-bottom: 100px;
 }
