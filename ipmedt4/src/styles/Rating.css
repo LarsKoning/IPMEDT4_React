@@ -7,6 +7,8 @@
     font-family: 'Montserrat';
     margin: 10px;
     width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ECECEC;
 }
 
 
@@ -47,4 +49,5 @@
     border-radius: 10px;
     width: min(80%, 27rem);
     /* box-shadow: 0px 2px 10px 4px rgba(131, 138, 141, 0.5); */
+
 }
