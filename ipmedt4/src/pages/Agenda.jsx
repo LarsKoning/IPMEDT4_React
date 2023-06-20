@@ -19,8 +19,9 @@ function App() {
   return (
     <div>
     <Header text="Overzicht" />
-      <p id='agendaHeader'>Bekijk hier je komende afspraken</p>
+      <p id='agendaHeader'>Overzicht</p>
     <Calendar/>
+    
     </div>
   );
 }

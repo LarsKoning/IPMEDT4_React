@@ -1,11 +1,12 @@
 import React from "react";
 import '../styles/Discription.css'
+import image from '../icons/car.jpg'
 
 const Discription = ({titel ,schakeling, vrijekm, brandstof, stoelen, kofferbak, type, jaar}) => {
     return (
     <div className="caroverzicht">
       <section className="titel">
-        <img id="carImage" src="./icons/car.svg" alt="car" />
+        <img id="carImage" src={image} alt="car" />
         <p>{titel}</p>
       </section>
       <section className="iconrow">
