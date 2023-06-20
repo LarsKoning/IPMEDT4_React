@@ -6,7 +6,7 @@ import Road from '../icons/road.svg'
 const HalfCard = ({ text, appointment, date, hours }) => {
   return (
 
-    <Link to="/agenda" className="next-appointment">
+    <Link to="/NextAppointment" className="next-appointment">
       <div className="next-appointment-body">
         <p id='nextCard'>{text}</p>
         <img id='nextIcon' src={Road} alt="Agenda" />

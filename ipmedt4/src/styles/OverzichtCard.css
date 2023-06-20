@@ -23,7 +23,7 @@ p {
     margin: 0;
 }
 
-#agenda{
+#agenda {
     width: min(32px, 10vw);
 }
 
@@ -34,7 +34,7 @@ p {
 }
 
 #overzicht {
-    
+
     font-style: normal;
     font-size: 1.2rem;
 }

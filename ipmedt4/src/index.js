@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Tips from "./pages/Tips";
+import NextAppointment from "./pages/NextAppointment";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="agenda" element={<Agenda />} />
           <Route path="Profile" element={<Profile />} />
           <Route path="Tips" element={<Tips />} />
+          <Route path="NextAppointment" element={<NextAppointment />} />
         </Route>
       </Routes>
     </BrowserRouter>
