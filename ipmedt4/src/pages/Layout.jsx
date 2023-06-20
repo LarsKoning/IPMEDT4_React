@@ -14,7 +14,7 @@ const Layout = () => {
             <div >
                 <ul className="bottom-navbar">
                     <Link to='/' >
-                    <li className="selectedPage" >
+                    <li>
                         <img  src={'./icons/dashboard.svg'} alt="dashboard" />
                         <p>Performance</p>
                     </li>
