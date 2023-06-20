@@ -1,17 +1,21 @@
 .profileInfo {
     font-family: 'Montserrat';
+    font-size: 1rem;
     display: flex;
     align-items: center;
-    width: 60%;
+    width: 100%;
     justify-content: center;
     margin-top: 3vh;
-    margin-left: 0.6rem;
+    margin-bottom: 3vh;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid #ECECEC;
+
 }
 
 #profilePic {
-    width: 10vw;
-    height: auto;
+    height: 170px;
     margin-right: 1rem;
+    border-radius: 20px;
 }
 
 .privateInfo {
@@ -24,6 +28,7 @@
 .profileText {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .profileText {
@@ -32,6 +37,14 @@
     justify-content: center;
 }
 
-#profileRating {
-    background-color: red;
+.profileTitle {
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.PersonalInfo {
+    border-bottom: 2px solid #ECECEC;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }

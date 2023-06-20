@@ -3,18 +3,30 @@ import '../styles/Profile.css'
 import pfp from '../icons/pfp.png'
 import Rating from '../components/Rating';
 
-const ProfileCard = ({ naam, email, }) => {
+const ProfileCard = ({ naam, email, beoordeling }) => {
     return (
         <section className="profileInfo">
             <img id="profilePic" src={pfp} alt="profilepic" />
             <section className="privateInfo">
                 <section className="profileText">
-                    <p id="profielnaam">{naam}</p>
-                    <p>{email}</p>
+                    <section>
+                        <section className="PersonalInfo">
+                            <p className="profileTitle">Naam</p>
+                            <p id="profielnaam">{naam}</p>
+                        </section >
+                        <section className="PersonalInfo">
+                            <p className="profileTitle">Email</p>
+                            <p>{email}</p>
+                        </section>
+                        <section className="PersonalInfo">
+                            <p className="profileTitle">Beoordeling</p>
+                            <p>{beoordeling}</p>
+                        </section>
+                    </section>
                 </section>
-                <Rating id="profileRating" star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
-            </section>
+            </section >
         </section>
+
     )
 };
 

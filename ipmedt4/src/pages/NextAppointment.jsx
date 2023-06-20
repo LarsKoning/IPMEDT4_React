@@ -23,11 +23,10 @@ function App() {
   return (
     <div>
       <Header text="Overzicht" />
-      <ProfileCard naam="Conscious Carl" email={"Carl@gmail.com"} />
-      <br />
+      <ProfileCard naam="Conscious Carl" email={"Carl@gmail.com"} beoordeling={"positief"} />
       <Renter title={"Moment van de afspraak"} begintijd={"12:00"} eindtijd={"16:00"} startdatum={"20-06-2023"} einddatum={"20-06-2023"} />
       {/* <p>info over afspraak</p> */}
-      <Discription model={"OPEL Corsa"} kenteken={"12-34-AB"} vrijekm={"100 Km"} />
+      <Discription model={"OPEL Corsa"} kenteken={"12-34-AB"} vrijekm={"100 KM"} />
       <section id='buttonContainer'>
         <button id='DMButton'>
           Stuur een bericht
