@@ -28,6 +28,7 @@ function App() {
           <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
         </section>
         <section className='ratings'>
+          <p id='ratingTitle'>Jouw Ratings</p>
           <Rating header={"Gemiddelde"} underText={"4/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
           <Rating header={"Laatste"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
         </section>

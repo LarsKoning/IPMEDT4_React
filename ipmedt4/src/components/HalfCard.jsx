@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/HalfCard.css'
 import { Link } from 'react-router-dom';
+import Road from '../icons/road.svg'
 
 const HalfCard = ({ text, appointment, date, hours }) => {
   return (
@@ -8,7 +9,7 @@ const HalfCard = ({ text, appointment, date, hours }) => {
     <Link to="/agenda" className="next-appointment">
       <div className="next-appointment-body">
         <p id='nextCard'>{text}</p>
-        <img className="selectedPage" id='nextIcon' src="./icons/car.svg" alt="Agenda" />
+        <img id='nextIcon' src={Road} alt="Agenda" />
         <section className="comingAppointment">
           <p id='Appointment'> {appointment}</p>
           <p id='Date'> {date}</p>

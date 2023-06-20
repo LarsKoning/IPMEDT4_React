@@ -29,3 +29,11 @@ p {
     font-weight: 700;
     font-size: 34px;
 }
+
+#incomeTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 20px;
+
+}

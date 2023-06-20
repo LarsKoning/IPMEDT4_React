@@ -40,7 +40,7 @@
   /* margin: 0.8vh 0; */
   cursor: pointer;
   color: #242729;
-  height: 7vh;
+  height: 5vh;
 }
 
 .calendar-day.current-month {
