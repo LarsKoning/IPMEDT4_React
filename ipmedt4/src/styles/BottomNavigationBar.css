@@ -45,9 +45,7 @@
 }
 
 
-/* .selectedPage {
+.selectedPage {
   filter: invert(31%) sepia(85%) saturate(6500%) hue-rotate(170deg) brightness(98%) contrast(101%);
   font-style: italic;
-  font-weight: 100;
-  font-size: 12px;
-} */
+}
