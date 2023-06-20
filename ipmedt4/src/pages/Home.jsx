@@ -28,8 +28,8 @@ function App() {
           <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
         </section>
         <section className='ratings'>
-          <Rating header={"Gemiddelde"} underText={"3/5"} />
-          <Rating header={"Laatste"} underText={"3/5"} />
+          <Rating header={"Gemiddelde"} underText={"4/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
+          <Rating header={"Laatste"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
         </section>
         <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen" />
       </section>
