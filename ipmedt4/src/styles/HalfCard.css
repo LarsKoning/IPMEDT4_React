@@ -17,7 +17,7 @@ a .next-appointment-body {
     align-items: center;
     margin: 0;
     padding: 0;
-    
+
 }
 
 p {
@@ -31,20 +31,20 @@ p {
 }
 
 #nextCard {
-    
+
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
 }
 
-.comingAppointment{
-    
+.comingAppointment {
+
     display: flex;
     flex-direction: column;
     height: 100%;
     align-items: center;
 }
 
-#nextIcon{
+#nextIcon {
     width: min(32px, 10vw);
 }

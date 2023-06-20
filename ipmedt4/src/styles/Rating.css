@@ -51,3 +51,11 @@
     /* box-shadow: 0px 2px 10px 4px rgba(131, 138, 141, 0.5); */
 
 }
+
+.greyStar {
+    filter: invert(79%) sepia(8%) saturate(166%) hue-rotate(147deg) brightness(86%) contrast(89%);
+}
+
+.blueStar {
+    filter: invert(34%) sepia(83%) saturate(1162%) hue-rotate(168deg) brightness(91%) contrast(101%);
+}
