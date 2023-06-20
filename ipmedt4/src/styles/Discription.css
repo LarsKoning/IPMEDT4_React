@@ -1,23 +1,30 @@
-.iconrow{
+* {
+    font-family: 'Montserrat';
+}
+
+.iconrow {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     width: min(80% 40rem);
     margin: 30px;
     border-radius: 15px;
-    border: 1.5px solid grey;
+    /* border: 1.5px solid grey; */
 }
 
-.opties{
+.opties {
     display: flex;
-    flex-direction: column;
-    width: 7rem;
-    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
     text-align: center;
+    align-items: center;
+    border-bottom: 3px solid #ececec;
+    padding: 8px 0;
 }
 
-.titel{
+.titel {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +32,53 @@
     width: 100%;
 }
 
-.overigeinfo{
+.overigeinfo {
     padding-bottom: 100px;
 }
 
-#carImage{
-    width: 80%; 
-    height: max(20rem);
-    padding-left: 10%;
+#autotitel {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#omschrijving {
+    text-align: center;
+}
+
+.carImage {
+    width: max(8vw, 32px);
+}
+
+.caroverzicht {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.IconText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 8px;
+}
+
+#DMButton {
+    /* background-color: #0081B7; */
+    /* color: #FFFFFF; */
+    background-color: white;
+    border-radius: 8px;
+    padding: 1em;
+    border: 2px solid #0081B7;
+    width: 50vw;
+
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
 }

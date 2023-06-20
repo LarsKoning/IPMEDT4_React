@@ -1,52 +1,42 @@
 import React from "react";
 import '../styles/Discription.css'
-import image from '../icons/car.jpg'
+import image from '../icons/car.svg'
+import Licensce from "../icons/Rectangle-3.svg"
+import FreeKM from "../icons/extra-km.svg"
 
-const Discription = ({titel ,schakeling, vrijekm, brandstof, stoelen, kofferbak, type, jaar}) => {
-    return (
+const Discription = ({ model, kenteken, vrijekm }) => {
+  return (
     <div className="caroverzicht">
-      <section className="titel">
-        <img id="carImage" src={image} alt="car" />
-        <p>{titel}</p>
-      </section>
       <section className="iconrow">
+        <p id="autotitel" >Gekozen auto</p>
         <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {schakeling}</p>
+          <section className="IconText">
+            <img className="carImage" src={image} alt="car" />
+            <p>Model</p>
+          </section>
+          <p id='omschrijving'> {model}</p>
         </section>
         <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {vrijekm} per dag</p>
+          <section className="IconText">
+            <img className="carImage" src={Licensce} alt="" />
+            <p>Kenteken</p>
+          </section>
+          <p id='omschrijving'> {kenteken}</p>
         </section>
         <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {brandstof}</p>
-        </section>
-        <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {stoelen}</p>
-        </section>
-        <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {kofferbak} m3</p>
-        </section>
-        <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {type}</p>
-        </section>
-        <section className="opties">
-            <img src="./icons/calendar.svg" alt="" />
-            <p id='omschrijving'> {jaar}</p>
+          <section className="IconText">
+            <img className="carImage" src={FreeKM} alt="" />
+            <p>Vrije KM</p>
+          </section>
+          <p id='omschrijving'> {vrijekm}</p>
         </section>
       </section>
-      <section className="overigeinfo">  
-        <p>OMSCHRIJVING</p>
-        <p>PRIJS</p>
-      </section>
+      {/* <section className="overigeinfo">
+      </section> */}
     </div>
-    )
-  };        
+  )
+};
 
 
-  
-  export default Discription;
+
+export default Discription;

@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/Profile.css'
 import pfp from '../icons/pfp.png'
+import Rating from '../components/Rating';
 
 const ProfileCard = ({ naam, email, }) => {
     return (
@@ -11,7 +12,7 @@ const ProfileCard = ({ naam, email, }) => {
                     <p id="profielnaam">{naam}</p>
                     <p>{email}</p>
                 </section>
-                <p>Bericht</p>
+                <Rating id="profileRating" star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
             </section>
         </section>
     )
