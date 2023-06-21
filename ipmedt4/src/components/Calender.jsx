@@ -3,7 +3,7 @@ import moment from 'moment';
 import '../styles/calender.css'
 
 
-const Calendar = () => {
+const Calendar = (props) => {
   const [date, setDate] = useState(moment());
 
   const handlePrevMonth = () => {
@@ -36,9 +36,7 @@ const Calendar = () => {
       const isCurrentMonth = day.isSame(date, 'month');
       const isToday = day.isSame(moment(), 'day');
       const isPast = day.isBefore(moment(), 'day');
-      const isTaken = ['2023-06-30', '2023-05-27', '2023-05-28'];
-
-      isTaken.push('2023-05-30')      
+      const isTaken = props.isTaken;
 
       return (
         <div
