@@ -1,28 +1,56 @@
-import Calendar from '../components/Calender'
-import Modal from '../components/Modal';
-import { useState } from 'react';
-import Card from '../components/Card';
+import '../styles/Home.css'
+import '../App.css';
+import  Card  from '../components/Card';
 import Rating from '../components/Rating';
-import TopNavigationBar from '../components/TopNavigationBar';
 import Tip from '../components/Tip';
-import GoalCard from '../components/GoalCard';
+import '../styles/Tip.css';
+import { useState, useEffect } from 'react';
 import MonthSelect from '../components/MonthSelect';
 import '../styles/MonthSelect.css'
 import HalfCard from '../components/HalfCard';
 import OverzichtCard from '../components/OverzichtCard';
-import BottomNavigationBar from '../components/BottomNavigationBar';
-import '../styles/Home.css'
-import { Link } from 'react-router-dom';
+
+let totaal = 0;
 
 
 function App() {
-  const [openModal, setOpenModal] = useState(false)
+  const [reserveringen, setReserveringen] = useState([]);
+
+  async function getAllReserveringen(){
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
+      const jsonData = await response.json()
+
+      return jsonData
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  function updatePricing(resvs){
+    totaal = 0
+    resvs.map(resv => {
+      if(resv.owner === 1){
+        totaal += resv.bedrag
+      }
+    });
+  }
+
+  useEffect(() => {
+    
+    getAllReserveringen().then(response => {
+      setReserveringen(response)
+      updatePricing(response)
+    })
+    
+  }, [])
 
   return (
     <div className="App">
       <section className='content'>
         <MonthSelect month={"Juni 2023"} />
-        <Card text="Inkomsten" amount="$150,00" />
+        <Card text="Inkomsten" amount={"$" + totaal} />
         <section className='agenda'>
           <HalfCard text={"Volgende"} appointment={"Woensdag"} date={"24 Mei"} hours={"12:00 - 16:00"} />
           <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
