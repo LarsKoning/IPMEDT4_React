@@ -52,13 +52,13 @@ function App() {
         <MonthSelect month={"Juni 2023"} />
         <Card text="Inkomsten" amount={"$" + totaal} />
         <section className='agenda'>
-          <HalfCard text={"Volgende"} appointment={"Woensdag"} date={"24 Mei"} hours={"12:00 - 16:00"} />
+          <HalfCard text={"U Volgende Afspraak"} appointment={"Woensdag"} date={"24 Mei"} hours={"12:00 - 16:00"} />
           <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
         </section>
         <section className='ratings'>
           <p id='ratingTitle'>Jouw Ratings</p>
           <Rating header={"Gemiddelde"} underText={"4/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
-          <Rating header={"Laatste"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
+          <Rating header={"Meest recent"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
         </section>
         <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen" />
       </section>
