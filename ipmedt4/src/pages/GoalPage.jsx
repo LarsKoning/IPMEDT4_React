@@ -36,7 +36,7 @@ function App() {
       <section className="content">
         <Header text="Overzicht" />
         <MonthSelect month="Juni 2023" />
-        <GoalCard text="Maand Doel" amount1="150,00" amount2="200,00" />
+        <GoalCard text="Maand Doel" amount1="99,00" amount2="200,00" />
         <div id="graph">
           <Graph className="graph" chartData={earnings} />
         </div>

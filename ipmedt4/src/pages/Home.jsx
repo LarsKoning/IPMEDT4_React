@@ -10,7 +10,7 @@ import '../styles/MonthSelect.css'
 import HalfCard from '../components/HalfCard';
 import OverzichtCard from '../components/OverzichtCard';
 
-let totaal = '150,00';
+let totaal = 0;
 
 
 function App() {
@@ -28,28 +28,28 @@ function App() {
     }
   }
 
-  // function updatePricing(resvs) {
-  //   totaal = 0
-  //   resvs.map(resv => {
-  //     if (resv.owner === 1) {
-  //       totaal += resv.bedrag
-  //     }
-  //   });
-  // }
-
   function updatePricing(resvs) {
-    if (Array.isArray(resvs)) {
-      let totaal = 0;
-      resvs.map(resv => {
-        if (resv.owner === 1) {
-          totaal += resv.bedrag;
-        }
-      });
-      console.log("Total:", totaal);
-    } else {
-      console.log("Invalid input. Expected an array.");
-    }
+    totaal = 0
+    resvs.map(resv => {
+      if (resv.owner === 1) {
+        totaal += resv.bedrag
+      }
+    });
   }
+
+  // function updatePricing(resvs) {
+  //   if (Array.isArray(resvs)) {
+  //     let totaal = 0;
+  //     resvs.map(resv => {
+  //       if (resv.owner === 1) {
+  //         totaal += resv.bedrag;
+  //       }
+  //     });
+  //     console.log("Total:", totaal);
+  //   } else {
+  //     console.log("Invalid input. Expected an array.");
+  //   }
+  // }
 
 
   useEffect(() => {

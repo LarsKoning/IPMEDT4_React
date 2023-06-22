@@ -23,29 +23,29 @@ function App() {
     }
   }
 
-  // function getDates(resvs){
-  //   isTaken = [];
-  //   resvs.map(resv =>{
-  //     if(resv.owner === 1){
-  //       isTaken.push(resv.reservering)
-  //     }     
-  //   })
-  // }
-
-  function getDates(resvs) {
-    if (Array.isArray(resvs)) {
-      const isTaken = [];
-      resvs.map(resv => {
-        if (resv.owner === 1) {
-          isTaken.push(resv.reservering);
-        }
-      });
-      return isTaken;
-    } else {
-      // Handle the case when resvs is undefined or not an array
-      return []; // Return an empty array or any other appropriate value
-    }
+  function getDates(resvs){
+    isTaken = [];
+    resvs.map(resv =>{
+      if(resv.owner === 1){
+        isTaken.push(resv.reservering)
+      }     
+    })
   }
+
+  // function getDates(resvs) {
+  //   if (Array.isArray(resvs)) {
+  //     const isTaken = [];
+  //     resvs.map(resv => {
+  //       if (resv.owner === 1) {
+  //         isTaken.push(resv.reservering);
+  //       }
+  //     });
+  //     return isTaken;
+  //   } else {
+  //     // Handle the case when resvs is undefined or not an array
+  //     return []; // Return an empty array or any other appropriate value
+  //   }
+  // }
 
 
   useEffect(() => {
