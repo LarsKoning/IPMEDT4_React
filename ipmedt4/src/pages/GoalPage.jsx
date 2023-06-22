@@ -6,6 +6,8 @@ import Graph from '../components/Graph';
 import { Earnings } from '../Data';
 import { useState } from 'react';
 import Header from '../components/Header';
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
 
 
 
