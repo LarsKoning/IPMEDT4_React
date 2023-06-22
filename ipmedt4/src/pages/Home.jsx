@@ -52,8 +52,8 @@ function App() {
         <MonthSelect month={"Juni 2023"} />
         <Card text="Inkomsten" amount={"$" + totaal} />
         <section className='agenda'>
-          <HalfCard text={"U Volgende Afspraak"} appointment={"Woensdag"} date={"24 Mei"} hours={"12:00 - 16:00"} />
-          <OverzichtCard text={"Overzicht"} overzicht={"Bekijk hier je agenda"} />
+          <HalfCard text={"Volgende Afspraak"} appointment={"Woensdag"} date={"24 Mei"} hours={"12:00 - 16:00"} />
+          <OverzichtCard text={"Overzicht Afspraken"} overzicht={"Bekijk hier je agenda"} />
         </section>
         <section className='ratings'>
           <p id='ratingTitle'>Jouw Ratings</p>
