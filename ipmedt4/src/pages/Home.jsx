@@ -1,6 +1,6 @@
 import '../styles/Home.css'
 import '../App.css';
-import  Card  from '../components/Card';
+import Card from '../components/Card';
 import Rating from '../components/Rating';
 import Tip from '../components/Tip';
 import '../styles/Tip.css';
@@ -10,41 +10,41 @@ import '../styles/MonthSelect.css'
 import HalfCard from '../components/HalfCard';
 import OverzichtCard from '../components/OverzichtCard';
 
-let totaal = 0;
+let totaal = '150,00';
 
 
 function App() {
-  const [reserveringen, setReserveringen] = useState([]);
+  // const [reserveringen, setReserveringen] = useState([]);
 
-  async function getAllReserveringen(){
-    try {
-      const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
-      const jsonData = await response.json()
+  // async function getAllReserveringen() {
+  //   try {
+  //     const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
+  //     const jsonData = await response.json()
 
-      return jsonData
+  //     return jsonData
 
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
-  function updatePricing(resvs){
-    totaal = 0
-    resvs.map(resv => {
-      if(resv.owner === 1){
-        totaal += resv.bedrag
-      }
-    });
-  }
+  // function updatePricing(resvs) {
+  //   totaal = 0
+  //   resvs.map(resv => {
+  //     if (resv.owner === 1) {
+  //       totaal += resv.bedrag
+  //     }
+  //   });
+  // }
 
-  useEffect(() => {
-    
-    getAllReserveringen().then(response => {
-      setReserveringen(response)
-      updatePricing(response)
-    })
-    
-  }, [])
+  // useEffect(() => {
+
+  //   getAllReserveringen().then(response => {
+  //     setReserveringen(response)
+  //     updatePricing(response)
+  //   })
+
+  // }, [])
 
   return (
     <div className="App">
@@ -58,7 +58,7 @@ function App() {
         <section className='ratings'>
           <p id='ratingTitle'>Jouw Ratings</p>
           <Rating header={"Gemiddelde"} underText={"4/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"blueStar"} star5={"greyStar"} />
-          <Rating header={"Meest recent"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
+          <Rating header={"Meest recente"} underText={"3/5"} star1={"blueStar"} star2={"blueStar"} star3={"blueStar"} star4={"greyStar"} star5={"greyStar"} />
         </section>
         <Tip text="Je laatste ratings zijn lager dan gemiddeld! Klik hier om tips te krijgen" />
       </section>

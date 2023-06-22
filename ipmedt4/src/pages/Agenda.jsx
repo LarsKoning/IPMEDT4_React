@@ -9,45 +9,45 @@ import Renter from '../components/Renter';
 let isTaken = []
 
 function App() {
-  const [reserveringen, setReserveringen] = useState([]);
+  // const [reserveringen, setReserveringen] = useState([]);
 
-  async function getAllReserveringen(){
-    try {
-      const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
-      const jsonData = await response.json()
+  // async function getAllReserveringen(){
+  //   try {
+  //     const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
+  //     const jsonData = await response.json()
 
-      return jsonData
+  //     return jsonData
 
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
-  function getDates(resvs){
-    isTaken = [];
-    resvs.map(resv =>{
-      if(resv.owner === 1){
-        isTaken.push(resv.reservering)
-      }     
-    })
-  }
+  // function getDates(resvs){
+  //   isTaken = [];
+  //   resvs.map(resv =>{
+  //     if(resv.owner === 1){
+  //       isTaken.push(resv.reservering)
+  //     }     
+  //   })
+  // }
 
-  useEffect(() => {
-    
-    getAllReserveringen().then(response => {
-      setReserveringen(response)
-      getDates(response)
-    })
-    
-  }, [])
+  // useEffect(() => {
+
+  //   getAllReserveringen().then(response => {
+  //     setReserveringen(response)
+  //     getDates(response)
+  //   })
+
+  // }, [])
 
 
   return (
     <div>
-    <Header text="Overzicht" />
+      <Header text="Overzicht" />
       <p id='agendaHeader'>Agenda</p>
-    <Calendar isTaken={isTaken}/>
-    <Renter begintijd={"12:00"} eindtijd={"14:00"} startdatum={"Van 06-30"} einddatum={"Tot 06-30"}/>
+      <Calendar isTaken={isTaken} />
+      <Renter begintijd={"12:00"} eindtijd={"14:00"} startdatum={"Van 06-30"} einddatum={"Tot 06-30"} />
     </div>
   );
 }

@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import Agenda from "./pages/Agenda";
 import Car from "./pages/Car";
 import Profile from "./pages/Profile";
-import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 import Tips from "./pages/Tips";
 import NextAppointment from "./pages/NextAppointment";
