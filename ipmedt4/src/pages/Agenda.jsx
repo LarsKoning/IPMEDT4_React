@@ -9,19 +9,19 @@ import Renter from '../components/Renter';
 let isTaken = []
 
 function App() {
-  // const [reserveringen, setReserveringen] = useState([]);
+  const [reserveringen, setReserveringen] = useState([]);
 
-  // async function getAllReserveringen(){
-  //   try {
-  //     const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
-  //     const jsonData = await response.json()
+  async function getAllReserveringen() {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/reserveringen/")
+      const jsonData = await response.json()
 
-  //     return jsonData
+      return jsonData
 
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   // function getDates(resvs){
   //   isTaken = [];
@@ -32,14 +32,30 @@ function App() {
   //   })
   // }
 
-  // useEffect(() => {
+  function getDates(resvs) {
+    if (Array.isArray(resvs)) {
+      const isTaken = [];
+      resvs.map(resv => {
+        if (resv.owner === 1) {
+          isTaken.push(resv.reservering);
+        }
+      });
+      return isTaken;
+    } else {
+      // Handle the case when resvs is undefined or not an array
+      return []; // Return an empty array or any other appropriate value
+    }
+  }
 
-  //   getAllReserveringen().then(response => {
-  //     setReserveringen(response)
-  //     getDates(response)
-  //   })
 
-  // }, [])
+  useEffect(() => {
+
+    getAllReserveringen().then(response => {
+      setReserveringen(response)
+      getDates(response)
+    })
+
+  }, [])
 
 
   return (
