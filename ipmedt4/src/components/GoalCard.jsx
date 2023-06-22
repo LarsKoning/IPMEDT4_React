@@ -13,7 +13,6 @@ const GoalCard = ({ text, amount1, amount2 }) => {
         <section id='progress'>
           <section className='top-goal-card'>
             <p id='goal'>{text}</p>
-            {/* <img id='pencil' src="./icons/pencil.svg" alt="Pencil" /> */}
           </section>
           <img id='goalmoneybag' src="./icons/money.svg" alt="Money" />
           <p id='goalamount'> ${amount1} / {amount2}</p>
@@ -31,7 +30,6 @@ const GoalCard = ({ text, amount1, amount2 }) => {
 var percentage = 0;
 function calc(amount1, amount2) {
   percentage = (amount1 / amount2) * 100
-  // console.log(percentage);
 }
 var r = document.querySelector(':root');
 function myFunction_set(percentage1) {

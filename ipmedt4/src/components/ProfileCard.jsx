@@ -1,7 +1,6 @@
 import React from "react";
 import '../styles/Profile.css'
 import pfp from '../icons/pfp.png'
-import Rating from '../components/Rating';
 
 const ProfileCard = ({ naam, email, beoordeling }) => {
     return (
